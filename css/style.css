@@ -7,8 +7,277 @@
 html,
 body {
   font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
 }
-body a {
+
+/* Header */
+header {
+  width: 100%;
+  position: fixed;
+  height: 100px;
+  z-index: 9999999999;
+  transition: all 0.5s;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  position: relative;
+}
+
+.header__logo {
+  position: relative;
+}
+
+.header__logo a:hover {
+  color: black;
+}
+
+.header__logo a {
   text-decoration: none;
+  color: #fb811e;
+  transition: all 0.5s;
+  font-weight: 600;
+}
+
+.header__logo i {
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  font-size: 16px;
+}
+
+.header__item #header__search {
+  background: #fff url(../img/search.png) no-repeat 10px center;
+  border: solid 1px #eee;
+  padding: 0 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 10em;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.header__item #header__search:focus {
+  width: 200px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+  padding-right: 15px;
+  border: none;
+  outline: 0;
+}
+
+.header__item {
+  list-style: none;
+}
+
+.header__item .nav-item {
+  display: inline;
+}
+
+.sticky {
+  background-color: white;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0/5%);
+  height: 70px;
+  margin: -5px 0;
+}
+
+.dark .sticky {
+  background-color: #222222;
+}
+/* Light theme */
+#myBody {
+  background-color: white;
+}
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+  font-size: 20px;
+}
+
+/* Dark Theme*/
+.dark#myBody {
+  background-color: #222222;
+  color: white;
+}
+.dark #switchButton {
+  background-color: transparent;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+  font-size: 20px;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+.dark .card {
+  background-color: transparent;
+  color: white;
+}
+
+.header__nav .change__theme:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.dark .slider__right h2 {
+  color: black;
+}
+
+.dark .navbar__menu .bars__item {
+  background-color: #222222;
+}
+/* NAVMENU */
+.navbar__menu #navbar__bars {
+  display: none;
+}
+.navbar__menu label {
+  transition: all 0.5s;
+}
+
+.navbar__check {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.navbar__menu .bars__menu {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background: var(--bg-color);
+  transition: all 0.3s ease-out;
+  position: absolute;
+  min-width: 8em;
+  right: 0;
+  border-radius: 4px;
+  box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+  width: 200px;
+}
+
+#navbar__bars:checked ~ ul.bars__menu {
+  max-height: 400px;
+  width: 200px;
+}
+
+.bars__menu .bars__item {
+  text-align: center;
+  transition: all 0.3s;
+  background-color: white;
+}
+
+.bars__item:hover,
+li.active {
+  color: #fb811e;
+}
+
+.bars__menu a {
+  text-decoration: none;
+  color: var(--heading-color);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* SLIDER */
+.slider__right h2 {
+  color: #f6f6f6;
+  font-size: 120px;
+  font-weight: 600;
+  margin-left: 1em;
+  position: absolute;
+  top: 120px;
+  left: 80px;
+}
+
+.slidright__content {
+  position: absolute;
+  z-index: 9999999;
+  left: 270px;
+  top: 200px;
+  width: 80%;
+}
+
+.slidright__content h3 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.slidright__content p {
+  font-size: 20px;
+}
+
+.slidright__content button {
+  background-color: #fb811e;
+  color: white;
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.slidright__content button:hover {
+  background-color: #009f4d;
+}
+
+.slidleft__item {
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.slidleft__img1 {
+  background-image: url(../img/b1.jpg);
+}
+
+.slidleft__img2 {
+  background-image: url(../img/b2.jpg);
+}
+
+.slidleft__img3 {
+  background-image: url(../img/b3.jpg);
+}
+
+/* slick carousel */
+.slidleft__content .slick-dots {
+  bottom: 20px;
+}
+
+.slidleft__content .slick-dots li button:before {
+  font-size: 13px;
+  color: white;
+  opacity: 1;
+}
+
+.slidleft__content .slick-dots li.slick-active button:before {
+  color: #fb811e;
+}
+
+.slidleft__content .slick-list {
+  border-radius: 15px;
+}
+
+.slidleft__text {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  text-align: center;
   color: #fff;
+}
+.slidleft__text h4 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.slidleft__text span {
+  font-size: 20px;
 }

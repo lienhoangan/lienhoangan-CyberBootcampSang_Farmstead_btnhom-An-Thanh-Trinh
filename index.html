@@ -1,67 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farmstead</title>
-    <!-- BS4.5 -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
 
-    <!-- FONT AWESOME 5.15.3 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-    />
-    <!-- GG FONT -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farmstead</title>
+  <!-- BS4.5 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 
-    <!-- STYLE CSS  -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  <!-- FONT AWESOME 5.15.3 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <!-- GG FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- 01 HEADER BAR -->
-    <header></header>
-    <!-- 02 SLIDER -->
-    <section class="slider"></section>
-    <!-- 03 NAVI ( grow naturally ) -->
-    <section class="navi"></section>
-    <!--  04 SERVICES -->
-    <section class="services"></section>
-    <!-- 05 QUALITY -->
-    <section class="quality"></section>
-    <!-- 06 ELEMENT (grid) -->
-    <section class="element"></section>
-    <!-- 07 GALLERY -->
-    <section class="gallery"></section>
-    <!-- 08 REVIEW -->
-    <section class="review"></section>
-    <!-- 09 FOOTER (contact) -->
-    <footer></footer>
+  <!-- SLICK CAROUSEL -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- JQUERY 3.6.0 min-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-    ></script>
-    <!-- BS4.5 -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- STYLE CSS  -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body id="myBody">
+  <!-- 01 HEADER BAR -->
+  <header id="myHeader">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <h1>
+            <a href="https://wp.w3layouts.com/farmstead/">Farmstead<i class="fa fa-leaf"></i>
+            </a>
+          </h1>
+        </div>
+        <div class="header__nav">
+          <ul class="navbar__menu header__item">
+            <li class="nav-item active">
+              <input type="search" id="header__search">
+            </li>
+            <li class="nav-item">
+              <div style="width: 18rem; display: inline;">
+                <button class="btn change__theme" id="switchButton" style="
+                margin-bottom: 10px;">
+                  <i class="far fa-moon change__theme"></i>
+                  <i class="far fa-sun change__theme"></i>
+                </button>
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <input type="checkbox" id="navbar__bars">
+              <label for="navbar__bars" id="menu__label"><i class="fa fa-bars navbar__check"></i></label>
+              <ul class="bars__menu">
+                <li class="bars__item active"><a href="#">HOME</a></li>
+                <li class="bars__item"><a href="#">ABOUT</a></li>
+                <li class="bars__item"><a href="#">SERVICES</a></li>
+                <li class="bars__item"><a href="#">BLOG POSTS</a></li>
+                <li class="bars__item"><a href="#">LANDING PAGE</a></li>
+                <li class="bars__item"><a href="#">ELEMENTS PAGE</a></li>
+                <li class="bars__item"><a href="#">404 PAGE</a></li>
+                <li class="bars__item"><a href="#">CONTACT</a></li>
+              </ul>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!-- 02 SLIDER -->
+  <section class="slider">
+    <div class="row">
+      <div class="slider__right col-5 container-fluid">
+        <h2>Farm</h2>
+        <div class="slidright__content">
+          <h3>Welcome to Farmstead
+            where Natural Food is born!</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          <button>Read More</button>
+        </div>
+      </div>
+      <div class="slider__left col-7 container-fluid">
+        <div class="slidleft__content">
+          <div class="slidleft__item slidleft__img1">
+            <div class="slidleft__text ">
+              <h4>01
+                <span>/03</span>
+              </h4>
+              <p>Agriculture</p>
+            </div>
+          </div>
+          <div class="slidleft__item slidleft__img2">
+            <div class="slidleft__text ">
+              <h4>02
+                <span>/03</span>
+              </h4>
+              <p>Farm Field</p>
+            </div>
+          </div>
+          <div class="slidleft__item slidleft__img3">
+            <div class="slidleft__text ">
+              <h4>03
+                <span>/03</span>
+              </h4>
+              <p>Organic Farm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 03 NAVI ( grow naturally ) -->
+  <section class="navi"></section>
+  <!--  04 SERVICES -->
+  <section class="services"></section>
+  <!-- 05 QUALITY -->
+  <section class="quality"></section>
+  <!-- 06 ELEMENT (grid) -->
+  <section class="element"></section>
+  <!-- 07 GALLERY -->
+  <section class="gallery"></section>
+  <!-- 08 REVIEW -->
+  <section class="review"></section>
+  <!-- 09 FOOTER (contact) -->
+  <footer></footer>
+
+
+  <!-- JQUERY 3.6.0 min-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+  <!-- BS4.5 -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script>
+    document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark");
+    };
+  </script>
+
+
+
+
+
+  <!-- SLICK CAROUSEL -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $('.slidleft__content').slick({
+      draggable: false,
+      dots: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      speed: 700
+    });
+  </script>
+
+  <!-- Sticky Header -->
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("myHeader");
+
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+  <script src="./js/backtotop/main.js"></script>
+  <script src="./js/backtotop/util.js"></script>
+</body>
+
 </html>
