@@ -135,6 +135,15 @@ header {
 .dark .navbar__menu .bars__item {
   background-color: #222222;
 }
+
+.dark .slidright__content h3,
+.dark .slidright__content p {
+  color: white;
+}
+
+.dark .header__nav .bars__item a {
+  color: white;
+}
 /* NAVMENU */
 .navbar__menu #navbar__bars {
   display: none;
