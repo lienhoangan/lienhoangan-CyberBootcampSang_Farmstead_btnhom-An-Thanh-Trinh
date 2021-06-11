@@ -273,6 +273,234 @@ li.active {
   text-align: center;
   color: #fff;
 }
+
+/* 03 NAVI ( grow naturally ) */
+.navi__left-small-title {
+  color: #fb811e;
+  font-size: 22px;
+}
+.navi__left-title {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+}
+.navi__left-btn {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  font-weight: 600;
+  background: #fb811e;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.25s ease-in-out;
+}
+.navi__left-btn:hover {
+  background: #009f4d;
+  color: #ffffff;
+}
+@media (min-width: 549.99px) {
+  .navi__right-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 550px) {
+  .navi__right-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.navi__right-grids-item {
+  padding: 40px 30px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
+  background-color: white;
+}
+.navi__right-grids-item:hover {
+  transition: 0.3s;
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+.navi__right-grids-item h4 a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 25px;
+  display: block;
+  color: black;
+}
+.navi__right-grids-item h4 a:hover {
+  color: #009f4d;
+}
+
+/* 04 SERVICES */
+.services {
+  background-color: #009f4d;
+}
+.services span.card_laber {
+  color: #009f4d;
+  background: rgb(0 159 77 / 16%);
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+.services h4.title-bg-content {
+  text-decoration: none;
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  z-index: 0;
+  opacity: 0.14;
+  font-size: 12vw;
+  right: 50%;
+  left: 0;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+@media (max-width: 991px) {
+  .title-style {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+.card-header:first-child {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.services .card img {
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+a.service-heading {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  color: black;
+  margin: 15px 0;
+}
+.img-responsive {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+  width: 100%;
+}
+a.service-heading:hover {
+  color: #009f4d;
+  text-decoration: none;
+}
+/* 5 */
+h5.small-title {
+  color: #fb811e;
+  font-size: 22px;
+}
+.title-style {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  color: black;
+}
+.grids_info span.fa {
+  font-size: 30px;
+  color: #fb811e;
+}
+.grids_info h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.imginfo__box {
+  background-color: #fb811e;
+  color: #fff;
+  position: absolute;
+  left: -85px;
+  bottom: 38px;
+  padding: 40px;
+  box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+  min-width: 300px;
+  border-radius: 0 0 100px 0;
+  text-align: center;
+}
+.imginfo__box .imginfo__title {
+  font-size: 70px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: 600;
+}
+.imginfo__box p {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.radius-image {
+  border-radius: 15px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* 06 */
+.element h4 {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+.element h4:hover {
+  transition: 0.3s ease-in-out;
+  color: #009f4d;
+  text-decoration: none;
+}
+.element p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #707070;
+}
+.element__item {
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+mg {
+  max-width: 100%;
+}
+
+.element img {
+  height: auto;
+  max-width: 100%;
+  border-style: none;
+  vertical-align: middle;
+  border-style: none;
+}
+.element .col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+=======
 .slidleft__text h4 {
   font-size: 25px;
   font-weight: bold;
