@@ -371,7 +371,7 @@ li.active {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
 }
 .services .card img {
-  border-radius: 20px;
+  border-radius: 0.25rem;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -452,6 +452,17 @@ img {
   max-width: 100%;
 }
 
+.dark .services .card-body {
+  background-color: #222222;
+}
+
+.dark .services a {
+  color: white;
+}
+.dark .services p {
+  color: #b7b7b7;
+}
+
 /* 06 */
 .element h4 {
   font-size: 22px;
@@ -500,7 +511,7 @@ mg {
 .element .col-3 {
   flex: 0 0 25%;
   max-width: 25%;
-=======
+}
 .slidleft__text h4 {
   font-size: 25px;
   font-weight: bold;
